@@ -25,6 +25,7 @@ import axios from 'axios'
    methods: {
       clicked(){
         this.$message.success("期待您的下次光临");
+        localStorage.removeItem('user')
         this.$router.push('/sigon');
         
       }
